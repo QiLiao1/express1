@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>换样式</title>
+    <link id="myStyle" rel="stylesheet" href="./1a.css">
+</head>
+
+<body>
+    <div id="main"></div>
+    <br>
+    <br>
+    <button id="myButton">换肤</button>
+    <script>
+        var buttonTarget = window.document.getElementById("myButton");
+        buttonTarget.onclick = function target() {
+            var linkTarget = document.getElementById("myStyle");
+            linkTarget.href = "2a.css";
+        }
+        var change = function () {
+            var linkTarget = document.getElementById("myStyle");
+            linkTarget.href = "2a.css";
+        }
+        setTimeout(change, 2000)
+        
+
+    </script>
+
+</body>
+
+</html>
